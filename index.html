@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<!--Background color: Success Subtle-->
+<body class="bg-success-subtle">
+    <!--Note to self: always check which version of bootstrap you're running before
+    looking at the documentation. Whew. -->
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!--The "brand" in the corner - directs to homepage when clicked-->
+        <a class="navbar-brand" href="index.html">Tables and Such</a>
+        <!--Creates dropdown button when screen is small enough-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+        aria-controle="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <!--Links to choose from on navber: Home and About-->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="navbar-nav">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--header with italics, center text, and top+bottom padding-->
+    <h1 class="fst-italic text-center pt-4 pb-4">Welcome, to Tables and Such.</h1>
+    <!--Table with a border, hover class, text centered, dark theme-->
+    <table class="table table-hover table-bordered text-center table-dark">
+        <!--Top row with largest font size, one column size 2, one column size 10 to make 12-->
+        <tr class="fs-1">              
+            <th class="col-lg-2">Place</th>
+            <th class="col-lg-10">Table Type</th>
+        </tr>
+        <!--All rows following are the same, font size 4, same column sizes as table header-->
+        <tr class="fs-4">
+            <th class="col-lg-2">First</th>
+            <td class="col-lg-10">Coffee Table</td>
+        </tr>
+        <tr class="fs-4">
+            <th class="col-lg-2">Second</th>
+            <td class="col-lg-10">Dining Table</td>
+        </tr>
+        <tr class="fs-4">
+            <th class="col-lg-2">Third</th>
+            <td class="col-lg-10">End Table</td>
+        </tr>
+        <tr class="fs-4">
+            <th class="col-lg-2">Four</th>
+            <td class="col-lg-10">The rest of them.</td>
+        </tr>
+    </table>
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>  
+
+
+</body>
+</html>
